@@ -1,1 +1,0 @@
-while read line; do echo $line | sed -e 's/.\/data\//sol_/' -e 's/\ trivial_coloring// | touch  && python solver.py  >> sol_; done < soluciones.txt

@@ -1,4 +1,0 @@
-Este script requiere dos argumentos: 
-El archivo con los datos del problema y el nombre del
-                 algoritmo que diseñaste.
-i.e. python solver.py ./data/gc_4_1 trivial_coloring
