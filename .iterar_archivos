@@ -1,0 +1,19 @@
+for file in ~/folder/*; function file
+
+for x in 10 20 30 40; do echo ks_"${x}"_0; done
+
+The -o flag returns the --only-matching part of the expression, so not the entire line which is - of course - normally done by grep.
+
+To remove the "stalled :" from the output, we can use a third canonical tool, cut:
+
+grep -o 'stalled.*' | cut -f2- -d:
+
+The cut command uses delimiter : and prints field 2 till the end. It's a matter of preference of course, but the cut syntax I find very easy to remember.
+
+while read p; do
+  echo "$p"
+done <peptides.txt
+
+while read p; do
+    python solver.py ./data/$p tg >> test
+done <soluciones
